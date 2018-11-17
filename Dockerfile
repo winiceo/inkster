@@ -43,7 +43,8 @@ FROM alpine
 WORKDIR /app
 RUN mkdir /app/app
 COPY --from=app-builder /app/main /app
-copy --from=app-builder /app/graphql.html /app/app
+COPY --from=app-builder /app/graphql.html /app/app
+COPY --from=app-builder /config.toml /app
 COPY --from=ui-builder /src/app/build /app/panel/build
 
 CMD ["/app/main", "runserver"]
