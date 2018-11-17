@@ -1,0 +1,11 @@
+export POSTGRES_HOST='postgres://inkster:inkster@db/inkster?sslmode=disable'
+export INKSTER_PORT=8000 
+export INKSTER_STATIC=static
+export INKSTER_SERVE_STATIC=1
+export INKSTER_DEBUG=1
+export INKSTER_SMTP_HOST=dummy
+export INKSTER_SMTP_LOGIN=dummy
+export INKSTER_SMTP_ADDR=dummy
+export INKSTER_SMTP_PASS=dummy
+export INKSTER_SMTP_PORT=dummy
+export INKSTER_SECRET_KEY=plschangeme
